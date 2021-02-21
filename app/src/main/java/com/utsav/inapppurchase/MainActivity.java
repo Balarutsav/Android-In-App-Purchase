@@ -118,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
     private void queryAmiableProducts() {
         ArrayList<String> skuList = new ArrayList<>();
         skuList.add("golden_plan");
+        skuList.add("test_product_one");
+        skuList.add("test_product_two");
         SkuDetailsParams.Builder params = SkuDetailsParams.newBuilder();
         params.setSkusList(skuList).setType(BillingClient.SkuType.INAPP);
         try {
